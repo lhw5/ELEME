@@ -1,0 +1,123 @@
+@charset "utf-8";
+html{font-size:100px}
+body,p,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,hr,hearder,footer,blockquote,object,iframe,fieldset,input,legend,form,th,td{margin:0;padding:0}
+body,input,textarea,keygen,select,button,isindex,pre{font:14px/1.5 Cambria;color:#333;word-break:break-all}
+a{ cursor:pointer; color:#6e6e6e;text-decoration:none;}
+a:hover,a:focus{ outline:none}
+i,b,strong{ font-style:normal; font-weight:normal}
+pre{white-space:normal}
+ul,ol,li{list-style:none}
+img{border:none}
+.hide{ display:none}
+button{ border:none; background:none}
+button:focus{ outline:none}
+h1,h2,h3,h4,h5,h6,em,strong{ font-weight:normal; font-size:inherit}
+em,strong{ font-style:normal}
+.tr{ text-align:right}
+.ellipsis{overflow:hidden;white-space:nowrap;text-overflow:ellipsis; word-wrap: normal}
+[v-cloak]{display: none}
+
+body{ margin-top: 50px;}
+
+/*头部共用样式*/
+header{ height:50px; width:100%; position: fixed; top:0;left:0; background: #900; z-index: 20}
+
+/*首页-----------------------------------------------*/
+/*input设置block宽度不能充满整行*/
+.home header label{ display: block; margin:10px 70px 0 20px; }
+.home header input{width:100%; padding-left: 10px; border:none; height: 30px; border-radius:5px;} 
+.home header input::placeholder{ color: #ccc;}/*placeholder样式*/
+.home header .search-btn{ position:absolute; right: 18px; top:13px; border: none; background: none; color: #fff; font-size: 16px;}
+
+/*侧边菜单*/
+.home aside{left:0;top:50px;position:fixed; height:100%; width:70px; background:#EFEDED; z-index:40}
+.home aside li{ height:60px; line-height:60px; text-align:center; border-top:1px solid #ddd; border-bottom:1px solid #eee;}
+.home aside li.ac{ background:#fff; color:#f55}
+
+/*右侧菜单*/
+.home .order-bar{margin-left:80px;padding-bottom:20px;position:relative;}
+.home .order-bar .order-class h3{ height:35px; line-height:35px; font-size:16px; background:#efefef; text-indent:10px}
+.home .good-list{padding-bottom: 50px;}
+.home .good-list li{ min-height:70px; padding:14px 20px 14px 90px; position:relative; border-bottom:1px solid #eee;}
+.home .good-list li img{ height:70px;position:absolute; left:10px; border-radius:15px}
+.home .good-list li h4{ font-size:16px; padding-bottom:5px; padding-top:5px}
+.home .good-list li p{ font-size:12px}
+.home .good-list li .describe{ height:25px;}
+.home .good-list li strong{font-size:20px; color:#F93034}
+.home .good-list li .total-num{ position: absolute; right: 30px;top:30px;}
+.home .good-list li .total-num em{ font-size:30px; color: #333;}
+.home .good-list li .pointer-btn{border:1px solid #F00;width:42px;height:24px; line-height:22px; font-size:12px;border-radius:20px; color:#fff; background: #F00; position:absolute; right:20px}
+.home .good-list li .pointer-btn i{ display:none}
+.home .good-list li .pointer-btn.ac{ background:#fff; color:#666;border:1px solid #ccc;}
+.home .good-list li .pointer-btn.ac b{ display:none}
+.home .good-list li .pointer-btn.ac i{ display:inline}
+
+/*底部*/
+.home footer{ position:fixed; bottom:0; left:0; height:50px; width:100%; z-index:60}
+.home footer .cont{ background:#EBEBEB; z-index:20; position:relative}
+.home footer .cont .total{ line-height:50px; text-indent:20px;}
+.home footer .cont .total em{ font-size:22px; color:#F93336; padding:0 5px}
+.home footer .cont a{ font-size:16px; height:100%; width:100px; position:absolute; right:0; top:0; background:#f55; color:#fff; text-align:center; line-height:50px}
+.home footer .cont .order-pointer-footer em{ padding-left:80px}
+
+/*购物车*/
+.home .shoping-cart{position:absolute;top:0; width:100%; box-sizing:border-box; padding-bottom:40px;}
+.home .shoping-cart .empty{ height:40px; background:#fff; border-bottom:2px solid #ccc;}
+.home .shoping-cart .empty span{ position:absolute; top:5px; right:10px; height:30px; width:30px; font-size: 20px; color: #ccc;}
+.home .shoping-cart ul{background:#fff; height:228px; overflow:scroll; padding-bottom:40px}
+.home .shoping-cart li{ height:55px; line-height:55px; border-bottom:1px solid #ddd; position:relative; padding:0 20px;}
+.home .shoping-cart li em{ position:absolute; right:135px; top:3px; font-size:16px}
+.home .shoping-cart li div{position:absolute; right:20px; top:3px; text-align:justify;}
+.home .shoping-cart li div button{height:20px; width:30px; border-radius:10px; line-height:20px; vertical-align:-2px; background-size:50%; background-repeat:no-repeat; background-position:center}
+.home .shoping-cart li div button:first-of-type{background-color:#f55; color: #fff;}
+.home .shoping-cart li div button:last-of-type{background-color:#f55;color: #fff;}
+.home .shoping-cart li div span{ padding:0 10px; display:inline-block; width:20px; text-align:center; font-size:16px}
+.home .shoping-cart .shopping-btn{ position:absolute;top:-22px; left:25px; width:60px; height:60px; background-color:#666; border-radius:50%; z-index:30; color: #fff; font-size: 30px;}
+.home .shoping-cart .count{position:absolute;height:20px; width:20px; line-height:20px; border:2px solid #fff; border-radius:50%; background:#f55; border:2px solid #fff; color:#fff; text-align:center; font-size:12px;  top:-30px; left:62px; z-index:40;}
+
+/*动画*/
+.home .shoping-list-slide{top:-280px;}
+.home .shoping-list-slide .shopping-btn{top:-45px;}
+.home .shoping-list-slide .count{top:-57px;}
+
+/*模态层*/
+.home .modal{position:fixed;top:0;left:0; height:100%; width:100%; z-index:40; background:#000; opacity:.4}
+
+/*抛物线*/
+.parabola-el{position:absolute;background-color:red;width: 20px;height:20px;border-radius: 50%; z-index:60}
+
+/*pay--------------------------------------------------------*/
+.pay{ position: fixed; top:0; left:0; width: 100%; z-index: 50; background: #fff;  padding:100px 30px; box-sizing: border-box;font-size: 20px;}
+.pay h2{ margin-bottom: 30px;font-size: 30px; color:#000; text-align: center;}
+.pay h3{ margin-bottom: 30px;font-size:20px;}
+.pay .order-num{ margin-bottom: 30px;font-size:40px; color: red;}
+.pay button{ width: 100%; height: 60px; background: red; border-radius: 10px; color: #fff;font-size:20px;}
+.pay .pay-btn{ background: red;}
+.pay .goback-btn{ background:#ccc; margin-top: 30px;}
+
+/*详情页----------------------------------------------------*/
+.detail header h1{ position:absolute; top:12px; left:45px; color: #fff ; font-size: 18px;}
+.detail header .goback-btn{ height: 25px; position: absolute;top:5px; left: 10px; color: #fff; font-size: 30px;}
+.detail .cont h4 {height:80px; line-height:80px; text-indent:20px; font-size:24px; color:#900; font-weight: bold;}
+.detail .cont h4 .price{ font-size: 16px; color: red; margin-left: 20px;}
+.detail .cont .describe{ font-size: 16px; line-height:30px; padding: 20px;}
+.detail .slide-img {width: 100%;height: 220px;}
+.detail .plus-btn{ background: none; border: none; position: absolute; top:60px; right: 20px; font-size: 30px; color: red;}
+.detail .plus-btn.ac{ color: #ccc;}
+
+/*搜索结果*/
+.list header h1{ position:absolute; top:12px; left:45px; color: #fff ; font-size: 18px;}
+.list header .goback-btn{ height: 25px; position: absolute;top:5px; left: 10px; color: #fff; font-size: 30px;}
+.list header .total{ position: absolute; right: 20px; top: 16px; color: #fff;}
+.list .good-list{padding:0 20px 50px 20px;}
+.list .good-list li{ min-height:70px; padding:14px 20px 14px 84px; position:relative; border-bottom:1px solid #eee}
+.list .good-list li h4{ font-size:16px; padding-bottom:5px; padding-top:5px}
+.list .good-list li img{height:70px;position:absolute; border-radius:15px;left:0}
+.list .good-list li p{ font-size:12px}
+.list .good-list li .describe{ height:25px;}
+.list .good-list li strong{font-size:20px; color:#F93034}
+.list .good-list li .pointer-btn{border:1px solid #F00;width:42px;height:24px; line-height:24px;border-radius:20px; color:#fff; background: #F00; position:absolute; right:0}
+.list .good-list li .pointer-btn i{ display:none}
+.list .good-list li .pointer-btn.ac{ background:#fff; color:#666;border:1px solid #ccc;}
+.list .good-list li .pointer-btn.ac b{ display:none}
+.list .good-list li .pointer-btn.ac i{ display:inline}

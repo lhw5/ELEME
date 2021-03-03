@@ -1,0 +1,138 @@
+{
+	
+	"goods":{
+            "1": { 
+                   "id":1,
+                  "name":"宫保鸡丁",
+                  "describe":"是一道闻名中外的特色传统名菜。鲁菜、川菜、贵州菜中都有收录，原料、做法有差别。 [2]  该菜式的起源与鲁菜中的酱爆鸡丁，和贵州菜的胡辣子鸡丁有关，后被清朝山东巡抚、四川总督丁宝桢改良发扬，形成了一道新菜式——宫保鸡丁，并流传至今，此道菜也被归纳为北京宫廷菜 [3]  。之后宫保鸡丁也流传到国外。",
+                  "img":"/images/gbjd1.jpg",
+                  "slide":["/images/gbjd1.jpg","/images/gbjd2.jpg","/images/gbjd3.jpg"],
+                  "price":22,
+                  "checked":false
+              },
+              "2":{ 
+                  "id":2,
+                  "name":"鱼香肉丝",
+                  "describe":"是一道闻名中外的特色传统名菜。",
+                  "img":"/images/yxrs.jpg",
+                   "slide":["/images/yxrs.jpg"],
+                  "price":18,
+                  "checked":false
+              },
+             "3": { 
+                  "id":3,
+                  "name":"红烧茄子",
+                  "describe":"是一道闻名中外的特色传统名菜。",
+                  "img":"/images/hsqz.jpg",
+                  "slide":["/images/hsqz.jpg"],
+                  "price":15,
+                  "checked":false
+              },
+             "4": { 
+                  "id":4,
+                  "name":"干煸豆角",
+                  "describe":"是一道闻名中外的特色传统名菜。",
+                  "img":"/images/gbdj.jpg",
+                  "slide":["/images/gbdj.jpg"],
+                  "price":18,
+                  "checked":false
+              },
+              "5":{ 
+                  "id":5,
+                  "name":"铁板鱿鱼",
+                  "describe":"是一道闻名中外的特色传统名菜。",
+                  "img":"/images/tbyy.jpg",
+                  "slide":["/images/tbyy.jpg"],
+                  "price":35,
+                  "checked":false
+              },
+              "6":{ 
+                  "id":6,
+                  "name":"回锅肉",
+                  "describe":"是一道闻名中外的特色传统名菜。",
+                  "img":"/images/hgr.jpg",
+                  "slide":["/images/hgr.jpg"],
+                  "price":18,
+                  "checked":false
+              },
+              "7":{ 
+                  "id":7,
+                  "name":"锅包肉",
+                  "describe":"是一道闻名中外的特色传统名菜。",
+                  "img":"/images/gbr.jpg",
+                  "slide":["/images/gbr.jpg"],
+                  "price":23,
+                  "checked":false
+              },
+              "8":{ 
+                  "id":8,
+                  "name":"清炒荷兰豆",
+                  "describe":"是一道闻名中外的特色传统名菜。",
+                  "img":"/images/hld.jpg",
+                  "slide":["/images/hld.jpg"],
+                  "price":21,
+                  "checked":false
+              },
+              "9":{ 
+                  "id":9,
+                  "name":"麻婆豆腐",
+                  "describe":"是一道闻名中外的特色传统名菜。",
+                  "img":"/images/mpdf.jpg",
+                  "slide":["/images/mpdf.jpg"],
+                  "price":14,
+                  "checked":false
+              },
+              "10":{    
+                  "id":10,
+                  "name":"铁板牛柳",
+                  "describe":"是一道闻名中外的特色传统名菜。",
+                  "img":"/images/tbnl.jpg",
+                  "slide":["/images/tbnl.jpg"],
+                  "price":35,
+                  "checked":false
+              },
+              "11":{    
+                  "id":11,
+                  "name":"凉拌青瓜",
+                  "describe":"是一道闻名中外的特色传统名菜。",
+                  "img":"/images/lbqg.jpg",
+                  "slide":["/images/lbqg.jpg"],
+                  "price":8,
+                  "checked":false
+              },
+              "12":{    
+                  "id":12,
+                  "name":"夫妻肺片",
+                  "describe":"是一道闻名中外的特色传统名菜。",
+                  "img":"/images/fqfp.jpg",
+                  "slide":["/images/fqfp.jpg"],
+                  "price":21,
+                  "checked":false
+              }
+           },
+
+
+	"goods_cls": [
+	    {
+			"id": 1,
+			"name": "热销",
+			"goods": [1, 3, 4, 9]
+		},
+		{
+			"id": 2,
+			"name": "家常菜",
+			"goods": [1, 2, 3, 4, 6, 7, 8 ,9]
+		},
+		{
+			"id": 3,
+			"name": "铁板",
+			"goods": [5, 8, 9, 10]
+		},
+		{
+			"id": 4,
+			"name": "凉菜",
+			"goods": [11, 12, 3, 7]
+		}
+	]
+	
+}
