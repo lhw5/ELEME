@@ -2,7 +2,7 @@
   <div class="home">
     <!-- 头部 -->
     <header>
-      <label><input type="search" v-model="keyword" :placeholder="search_ico"></label>
+      <label><input type="search"  @keyup.enter="search" v-model="keyword" :placeholder="search_ico"></label>
       <button class="search-btn" @click="search">搜索</button>
     </header>
     <!-- 侧边固定栏 -->
