@@ -10,5 +10,5 @@
 
 <style>
   @import '/css/ico.css';
-  @import '/css/style.css'
+  @import '/css/style.css';
 </style>
